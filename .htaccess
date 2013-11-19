@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond $1 !^(index\.php|robots\.txt|assets|style)
+RewriteRule ^(.*)$ /CI_HMVC_LoReg/index.php?/$1 [L]
+
+    # Disable rewrite for valid directory/files
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    #map all request urls to a specific controller method
+    RewriteRule ^(.*)$ index.php?/{controller}/{method}/$1 [L]
