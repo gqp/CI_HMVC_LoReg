@@ -26,6 +26,10 @@ This assumes that you have already set up a connection to a database. The users.
 
 That should be it!!
 
+Login information:
+Username = admin
+Password = admin
+
 
 ## Basic Information
 
