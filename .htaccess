@@ -3,7 +3,7 @@ RewriteEngine on
 RewriteBase /
 
 RewriteCond $1 !^(index\.php|robots\.txt|assets|style)
-RewriteRule ^(.*)$ /CI_HMVC_LoReg/index.php?/$1 [L]
+RewriteRule ^(.*)$ /LoReg/index.php?/$1 [L]
 
     # Disable rewrite for valid directory/files
     RewriteCond %{REQUEST_FILENAME} !-f

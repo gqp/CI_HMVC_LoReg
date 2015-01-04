@@ -12,7 +12,8 @@ class Register extends MX_Controller
 
     public function index(){
 
-        $this->load->view('register');
+        echo Modules::run('templates/register');
+        //$this->load->view('register');
     }
 
     public function submit(){
@@ -54,7 +55,8 @@ class Register extends MX_Controller
             if($this->mdl_register->add_user($key)){
                 //Send Email and if added to db
                 if($this->email->send()){
-                    $this->load->view('confirmation_thanks');
+                    echo Modules::run('templates/register_thanks');
+                    //$this->load->view('confirmation_thanks');
 
                 }else{
                     echo 'Something went wrong.';
@@ -64,7 +66,7 @@ class Register extends MX_Controller
             }
 
         }else{
-            $this->load->view('register');
+            echo Modules::run('templates/register');
         }
     }
 

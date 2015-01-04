@@ -1,0 +1,1 @@
+<a href='<?php echo site_url('users/add'); ?>'>Add User</a> | <a href='<?php echo site_url('users'); ?>'>Users</a> |  <a href='<?php echo site_url('members'); ?>'>Members Area</a> | <a href='<?php echo site_url('profile'); ?>'>View Profile</a> | <a href='<?php echo site_url('login/logout'); ?>'>Logout</a>

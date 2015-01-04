@@ -8,13 +8,7 @@ class Members extends MX_Controller
     }
 
     public function index(){
-
-        $this->members();
-    }
-
-    public function members(){
-
-        $this->load->view('members_area');
+        echo Modules::run('templates/members_area');
     }
 
 }
